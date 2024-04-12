@@ -188,12 +188,12 @@ async function mudiExperience({skuNumber,fatherContainer}){
     });  
 };
 
-setTimeout(()=>{
+/**setTimeout(()=>{
     mudiExperience({
     skuNumber:`LMP75205WDAB0_MabeMex`,
     fatherContainer: document.body.querySelectorAll(`.swiper-container`)
     });
-},5000)
+},5000) */
 
 
 

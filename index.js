@@ -64,8 +64,8 @@ function createButon(father){
     container.appendChild(button3D);
 
     /** Add container to DOM */
-    if(window.innerWidth>1000)father[0].appendChild(container);
-    else  father[1].appendChild(container);
+    if(window.innerWidth>1000)father[1].appendChild(container);
+    else  father[2].appendChild(container);
 
     /** Hidden Tooltip */
     setTimeout(()=>{

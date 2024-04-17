@@ -281,9 +281,6 @@ class sendData{
             "domain"            : this.domain
         };       
 
-        console.log(body);
-        debugger;
-
         /** Doing request */
         try {
             const request = await fetch('https://viewer.mudi.com.co:3589/api/mudiv1/sendRegistry',{
@@ -405,8 +402,6 @@ class MudiExperience{
         });
 
         fragment.appendChild(containerBtns);
-
-        console.log(this.fatherContainer)
 
         /** Add DOM */
         this.fatherContainer.appendChild(fragment)
@@ -646,12 +641,11 @@ let skuNumberBk         = null;
 /** verify DomElement */
 async function verifyDomElement(){
 
-    let contentDesk     = document.body.querySelector(`.swiper-container`);
-    let contetMobile    = document.body.querySelector(`.swiper-container`);
+    let contentDesk     = document.body.querySelectorAll(`.swiper-container`)[1];
+    let contetMobile    = document.body.querySelectorAll(`.swiper-container`)[2];
 
     if(contentDesk && contetMobile) {document.body.clientWidth < 500 ? (
         fatherContainer=contetMobile,
-        console.log(fatherContainer),
         await mudiExperience.experienceOn( skuNumberBk , fatherContainer)
         ) : (
         fatherContainer=contentDesk,
@@ -659,7 +653,6 @@ async function verifyDomElement(){
     )} 
     else if( verifycontent >1500 ) throw new Error('Skunumber undefined, verify selector JS')
     else {
-        console.log(verifycontent)
         verifycontent++
         requestAnimationFrame(verifyDomElement)
     }
@@ -675,7 +668,6 @@ async function verifySku(){
     let 
     skuOrigin = document.body.querySelector('.m-product-title').innerHTML;
     !skuOrigin && (
-        console.log(verifycontent),
         verifycontent ++ ,
         requestAnimationFrame(verifySku)
     )

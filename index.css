@@ -272,4 +272,34 @@
         display: none;
     }
 
+    .closeModalMudi {
+        position: absolute;
+        top: 1%;
+        right: 4%;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 18px;
+        transition: all .2s ease-in-out;
+        font-weight: 600;
+    }
+
+    .containerBtnsActions {
+        display: flex;
+        position: absolute;
+        top: 4%;
+        right: 2%;
+    }
+
+    .imgBtnAR {
+        width: 150px;
+        height: 80px;
+        cursor: pointer;
+        filter: drop-shadow(3px 5px 5px rgba(10, 10, 10, 0.196));
+    }
+
+    .iframeMudi3D {
+        width: 90%;
+    }
+
 }

@@ -271,9 +271,6 @@ class sendData{
             "domain"            : this.domain
         };       
 
-        console.log(body)
-        debugger;
-
         /** Doing request */
         try {
             const request = await fetch('https://viewer.mudi.com.co:3589/api/mudiv1/sendRegistry',{

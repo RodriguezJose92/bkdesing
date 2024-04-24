@@ -212,20 +212,10 @@ class sendData{
     getSkuNumer(sku){this.sku = sku};
 
     /** Get Category -- Programar por clientee */
-    getCategory(){
-        let category = document.body.querySelector('.example') ?? null;
-
-        if (!category) requestAnimationFrame(this.getCategory.bind(this))
-        else           this.category       = document.body.querySelector('.example').innerHTML;
-    };
+    getCategory(){this.category = 'null'};
 
     /** Get subCategory -- programar por cliente */
-    getSubCategory(){
-        let subCategory =  document.body.querySelector('.example') ?? null;
-
-        if (!subCategory)   requestAnimationFrame(this.getCategory.bind(this))
-        else                this.subCategory       =  document.body.querySelector('.example').innerHTML;
-    };
+    getSubCategory(){ this.subCategory = 'null'};
 
     /** Pixel Mudi ON */
     async pixelOn(skunumber){

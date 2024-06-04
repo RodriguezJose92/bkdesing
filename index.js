@@ -631,8 +631,8 @@ let skuNumberBk         = null;
 /** verify DomElement */
 async function verifyDomElement(){
 
-    let contentDesk     = document.body.querySelectorAll(`.swiper-container`)[1];
-    let contetMobile    = document.body.querySelectorAll(`.swiper-container`)[2];
+    let contentDesk     = document.body.querySelectorAll(`.swiper-container`)[0];
+    let contetMobile    = document.body.querySelectorAll(`.swiper-container`)[1];
 
     if(contentDesk && contetMobile) {document.body.clientWidth < 500 ? (
         fatherContainer=contetMobile,

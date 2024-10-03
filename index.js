@@ -626,5 +626,5 @@ setTimeout(() => {
         productTitle,
         document.querySelector('.swiper-slide.m-product-media--item.media-type-image.swiper-slide-active') // Corrige el punto y coma aquí
     );
-}, 500);
+}, 5000);
 

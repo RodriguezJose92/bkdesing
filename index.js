@@ -543,7 +543,7 @@ class MudiExperience{
 
         setTimeout(()=>{
             document.body.querySelector('.tooltipMudi').remove();
-        },9000)
+        },5000)
   
         return tooltip;
     };

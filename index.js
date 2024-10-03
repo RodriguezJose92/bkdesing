@@ -632,7 +632,7 @@ let skuNumberBk         = null;
 async function verifyDomElement(){
 
     let contentDesk     = document.body.querySelectorAll(`.swiper-container`)[1];
-    let contetMobile    = document.body.querySelectorAll(`.swiper-container`)[2];
+    let contetMobile    = document.querySelector('.swiper-slide.m-product-media--item.media-type-image.swiper-slide-active');
 
     if(contentDesk && contetMobile) {document.body.clientWidth < 500 ? (
         fatherContainer=contetMobile,
@@ -641,7 +641,7 @@ async function verifyDomElement(){
         fatherContainer=contentDesk,
         await mudiExperience.experienceOn( skuNumberBk , fatherContainer)
     )} 
-    else if( verifycontent >1500 ) throw new Error('Skunumber undefined, verify selector JS')
+    else if( verifycontent > 1500 ) throw new Error('Skunumber undefined, verify selector JS')
     else {
         verifycontent++
         requestAnimationFrame(verifyDomElement)

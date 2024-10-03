@@ -390,9 +390,6 @@ class MudiExperience{
         });
   
         fragment.appendChild(containerBtns);
-  
-        /** Add DOM */
-        this.fatherContainer.appendChild(fragment)
     };
   
     /** Create Modal ✔️ */
